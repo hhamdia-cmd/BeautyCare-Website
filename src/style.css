@@ -1,0 +1,201 @@
+/*  تنسيقات عامة للموقع */
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #b2004c;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/*  رأس وتذييل الصفحة  */
+header, footer {
+  background-color: #ffe6ec;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer p, footer ul {
+  margin: 10px 0;
+}
+
+/* تنسيق القوائم داخل الترويسة */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b2004c;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+  background-color: #d72638;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/*  تنسيق المحتوى الرئيسي  */
+main {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+/*تنسيق العناوين داخل الصفحة الرئيسية */
+.welcome h1 {
+  font-size: 24px;
+  color: #d72638;
+}
+
+button.change-background-btn{
+  background-color:#b2004c;
+  color:white;
+  padding:12px 24px;
+  border:none;
+  border-radius:15px;
+  cursor:pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+button.change-background-btn:hover{
+  background-color: #d72638;
+}
+#mathResults{
+  background-color: #fff0f5;
+  padding: 15px;
+  border-radius:10px;
+  margin-top:20px;
+  box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+
+
+.gallery .row {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery figure {
+  display: inline-block;             
+  margin: 1%;
+  vertical-align: top;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.gallery figure img {
+  border-radius: 8px;
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #b2004c;
+  font-weight: bold;
+}
+
+
+/*  تنسيق iframe للفيديو والخريطة */
+iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 90%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/*  حاوية النموذج (للتسجيل والتواصل)  */
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #fff0f5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* حقول النموذج  */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* تكبير صندوق الرسالة */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* زر الإرسال / التسجيل  */
+input[type="submit"],
+button[type="submit"] {
+  background-color: #b2004c;   
+  color: white;                
+  border: none;                
+  padding: 12px 24px;         
+  border-radius: 15px;         
+  cursor: pointer;             
+  font-size: 16px;             
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #d72638;  
+}
+
+
+
+
+/*  تحسين شكل الروابط داخل الفوتر  */
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: #b2004c;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #d72638;
+}

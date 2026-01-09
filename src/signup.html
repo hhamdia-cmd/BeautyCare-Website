@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>التسجيل</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <!-- Header (اسم الموقع فقط بدون تنقل) -->
+    <header>
+        <img src="logo.png"alt="شعار الموقع"width="250"><br>
+        <h1> موقع العناية بالبشرة</h1>
+    </header>
+     <!-- Main Content -->
+    <main>
+        <h2>سجّل الآن</h2>
+        <p>سجّل الآن للحصول على آخر العروض والتحديثات من موقع العناية بالبشرة</p>
+
+        <form action="homepage.html" method="post" onsubmit ="return validateForm()">
+               <!-- الاسم الكامل -->
+            <label>الاسم الكامل:<input type="text" name="fullname" required></label><br><br>
+
+               <!-- البريد الإلكتروني -->
+            <label>البريد الالكتروني:<input type="email" name="email"></label><br><br>
+
+                <!-- كلمة المرور -->
+            <label>كلمة المرور:<input type="password" name="password" required></label><br><br>
+
+                <!-- تأكيد كلمة المرور -->
+            <label>تأكيد كلمة المرور:<input type="password" name="confirm_password"></label><br><br>
+
+               <!--  الجنس  -->
+            <label>الجنس:</label>
+            <input type="radio" name="gender" value="female" required><label>أنثى</label>
+            <input type="radio" name="gender" value="male"required><label>ذكر</label><br><br>
+
+                <!-- الموافقة على الشروط --> 
+            <label><input type="checkbox" required> أوافق على الشروط والأحكام </label><br><br>
+
+                  <!-- زر الإرسال -->
+              <button type="submit">تسجيل</button>
+        
+        </form>
+    </main>
+
+        <!-- تذييل -->
+<footer>
+       <h3>تواصل معنا</h3>
+       <p>العنوان: شارع الرمال، غزة،فلسطين</p>
+         
+       <p>رقم الهاتف:  +972 0592431987 </p>
+       <p>البريد الإلكتروني: haneen@gmail.com</p>
+
+       <h4>تابعونا على مواقع التواصل</h4>
+         <ul>
+           <li><a href="https://www.facebook.com" target="_blank">فيسبوك</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">إنستغرام</a></li>
+        </ul>
+
+       <p>&copy; 2025 Skin Care. جميع الحقوق محفوظة.</p>
+       <p><a href="#">سياسة الخصوصية</a></p>
+</footer>
+ <script src="script.js"></script>
+</body>
+</html>

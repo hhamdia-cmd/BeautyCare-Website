@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>اتصل بنا - موقع العناية بالبشرة</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #fff0f5;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .required::after {
+            content: " *";
+            color: #d72638;
+        }
+        .form-note {
+            background: #e8f4ff;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <img src="logo.png" alt="شعار الموقع" width="250"><br>
+        <h1>موقع العناية بالبشرة</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">الرئيسية</a></li>
+                <li><a href="signup.html">إنشاء حساب</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2 style="text-align: center; color: #b2004c;">نحن هنا لخدمتك</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 20px;">
+                يسعدنا تواصلك معنا! إذا كان لديك أي استفسار أو ملاحظة، يرجى تعبئة النموذج وسنرد عليك بأقرب وقت.
+            </p>
+        </section>
+
+        <div class="form-container">
+            <div class="form-note">
+                ⓘ جميع الحقول التي تحمل علامة (*) إلزامية
+            </div>
+            
+            <form action="contact.php" method="get" onsubmit="return validateForm()">
+                <div style="margin-bottom: 20px;">
+                    <label class="required">الاسم الكامل:</label><br>
+                    <input type="text" name="name" required style="width: 100%; padding: 10px;" placeholder="أدخل اسمك الكامل">
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label class="required">البريد الإلكتروني:</label><br>
+                    <input type="email" name="email" required style="width: 100%; padding: 10px;" placeholder="example@email.com">
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>الموضوع:</label><br>
+                    <input type="text" name="subject" style="width: 100%; padding: 10px;" placeholder="موضوع الرسالة (اختياري)">
+                </div>
+                
+                <div style="margin-bottom: 25px;">
+                    <label class="required">الرسالة:</label><br>
+                    <textarea name="message" required style="width: 100%; padding: 10px; height: 150px;" placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button type="submit" style="background: #b2004c; color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-size: 16px;">
+                        📩 إرسال الرسالة
+                    </button>
+                    <button type="reset" style="background: #666; color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-size: 16px; margin-right: 10px;">
+                        🗑️ مسح النموذج
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <section style="margin-top: 40px;">
+            <h3 style="text-align: center;">موقعنا على الخريطة</h3>
+            <p style="text-align: center;">تفضل بزيارتنا في مقرنا الرئيسي في غزة.</p>
+            <div style="text-align: center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14542.434355879406!2d34.47528243812048!3d31.502072992918617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fd7f054e542767%3A0x7ff98dc913046392!2z2LrYstip!5e0!3m2!1sar!2s!4v1748174908239!5m2!1sar!2s" 
+                width="90%" height="400" style="border:0; border-radius: 10px; max-width: 800px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h3>تواصل معنا</h3>
+        <p>العنوان: شارع الرمال، غزة، فلسطين</p>
+        <p>رقم الهاتف: +972 0592431987</p>
+        <p>البريد الإلكتروني: haneen@gmail.com</p>
+        
+        <h4>تابعونا على مواقع التواصل</h4>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank">فيسبوك</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">إنستغرام</a></li>
+        </ul>
+        
+        <p>&copy; 2025 Skin Care. جميع الحقوق محفوظة.</p>
+        <p><a href="#">سياسة الخصوصية</a></p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            const name = document.forms[0]["name"].value;
+            const email = document.forms[0]["email"].value;
+            const message = document.forms[0]["message"].value;
+            
+            if (name.trim() === "") {
+                alert("الرجاء إدخال الاسم");
+                return false;
+            }
+            
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("الرجاء إدخال بريد إلكتروني صحيح");
+                return false;
+            }
+            
+            if (message.trim() === "") {
+                alert("الرجاء كتابة الرسالة");
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>
