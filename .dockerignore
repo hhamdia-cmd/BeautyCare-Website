@@ -1,0 +1,21 @@
+# Essentials only
+.git
+.github
+docs/
+screenshots/
+README.md
+Dockerfile
+.dockerignore
+.gitignore
+
+# Development files
+.vscode/
+.idea/
+.env
+node_modules/
+vendor/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
