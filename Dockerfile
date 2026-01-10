@@ -1,4 +1,3 @@
-# استخدام خادم ويب مع PHP لدعم contact.php
 FROM php:8.2-apache
 # تعيين مجلد العمل
 WORKDIR /var/www/html
